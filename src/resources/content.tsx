@@ -31,12 +31,6 @@ const social: Social = [
     essential: false,
   },
   {
-    name: "Soundcloud",
-    icon: "im ImSoundcloud",
-    link: "https://www.threads.com/@once_ui",
-    essential: true,
-  },
-  {
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
