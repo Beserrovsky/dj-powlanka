@@ -118,6 +118,11 @@ export default function About() {
             marginBottom="32"
           >
             {about.calendar.display && (
+              <a
+                  href={about.calendar.link} // <-- O link vai aqui agora
+                  // Aplique a estilização de link (se precisar, como remover sublinhado)
+                  style={{ textDecoration: 'none', color: 'inherit' }}
+              >
               <Row
                 fitWidth
                 border="brand-alpha-medium"
@@ -132,15 +137,10 @@ export default function About() {
                   backdropFilter: "blur(var(--static-space-1))",
                 }}
               >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Row paddingX="8">Schedule a call</Row>
-                <IconButton
-                  href={about.calendar.link}
-                  data-border="rounded"
-                  variant="secondary"
-                  icon="chevronRight"
-                />
+                <Icon paddingLeft="12" name="whatsapp" onBackground="brand-weak" />
+                <Row paddingX="8">Entre em contato</Row>
               </Row>
+              </a>
             )}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
